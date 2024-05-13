@@ -7,6 +7,8 @@
 
 PARSEG (PAralellised Refinement of SEGmentations) filters overlapping segmentation masks based on colocalization statistics, such as percent overlap. 
 
+----------------------------------
+
 This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
 
 ## Overview
@@ -46,3 +48,5 @@ If you encounter any problems, please file an issue along with a detailed descri
 [Cookiecutter]: https://github.com/audreyr/cookiecutter
 [@napari]: https://github.com/napari
 [Dask]: https://www.dask.org/
+
+[pip]: https://pypi.org/project/pip/
