@@ -5,7 +5,7 @@
 ![Commit activity](https://img.shields.io/github/commit-activity/y/FrancisCrickInstitute/CALM_Template?style=plastic)
 ![GitHub](https://img.shields.io/github/license/FrancisCrickInstitute/CALM_Template?color=green&style=plastic)
 
-PARSEG (PAralellised Refinement of SEGmentations) filters overlapping segmentation masks based on colocalization statistics, such as percent overlap. 
+PARSEG (PAralellised Refinement of SEGmentations) combines segmentation masks and filters overlapping objects based on colocalization statistics, such as percent overlap. 
 
 ----------------------------------
 
@@ -38,7 +38,7 @@ You can install `napari-segmentation-overlap-filter` via [pip]:
 8. Optionally, export the overlap dataframe as a csv file
 
 ### Python API
-This example notebook shows how you can integrate the Python API into your own workflow for filtering and combining overlapping segmentation masks
+This [example notebook] shows how you can integrate the Python API into your own workflow for filtering and combining overlapping segmentation masks
 
 ## Issues
 
@@ -48,5 +48,5 @@ If you encounter any problems, please file an issue along with a detailed descri
 [Cookiecutter]: https://github.com/audreyr/cookiecutter
 [@napari]: https://github.com/napari
 [Dask]: https://www.dask.org/
-
 [pip]: https://pypi.org/project/pip/
+[example notebook]: https://github.com/FrancisCrickInstitute/PARSEG/blob/main/Notebooks/Combine_Segmentations_And_Filter_Overlaps.ipynb
