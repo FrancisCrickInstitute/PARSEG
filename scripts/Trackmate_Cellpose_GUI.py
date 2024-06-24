@@ -55,7 +55,7 @@ class DropDown(JFrame):
 # GUI to find root directory with all images to be analysed
 GUI = DropDown()
 root_dir = GUI.get_file_name()
-print("Looking in " + root_dir " for tiff images")
+print("Looking in " + root_dir + " for tiff images")
 
 filenames = [os.path.basename(file_path) for file_path in glob.glob(root_dir + '/*.tif')]
 
