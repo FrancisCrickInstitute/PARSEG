@@ -24,6 +24,10 @@ There are two different ways to interact with PARSEG and use it for different ob
 You can install `napari-segmentation-overlap-filter` via [pip]:
 
     pip install napari-segmentation-overlap-filter
+    
+To install the latest development version:
+
+    pip install git+https://github.com/FrancisCrickInstitute/PARSEG
 
 ## Getting Started
 
