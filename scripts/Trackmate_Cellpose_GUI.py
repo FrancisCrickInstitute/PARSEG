@@ -66,6 +66,7 @@ for filename in filenames:
 	# open image
 	full_filepath = root_dir + '/' + filename
 	imp = IJ.openImage(full_filepath)
+	imp.removeScale()
 	
 	# check if file has z-slices
 	num_slices = imp.getNSlices()
@@ -75,8 +76,8 @@ for filename in filenames:
 	if num_slices > 1:
 		print("Converting 3D image to 2D+t and saving")
 		IJ.run(imp, "Re-order Hyperstack ...", "channels=[Channels (c)] slices=[Frames (t)] frames=[Slices (z)]");
-		imp.removeScale();
-		IJ.saveAs("tiff", full_filepath);
+
+	IJ.saveAs("tiff", full_filepath)
 	
 	# make new directory to store all files
 	new_dir_path = root_dir + '/' + os.path.splitext(filename)[0]
