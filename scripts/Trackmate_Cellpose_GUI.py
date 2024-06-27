@@ -75,9 +75,10 @@ for filename in filenames:
 	# if 3D convert to 2D+t
 	if num_slices > 1:
 		print("Converting 3D image to 2D+t and saving")
-		IJ.run(imp, "Re-order Hyperstack ...", "channels=[Channels (c)] slices=[Frames (t)] frames=[Slices (z)]");
+		IJ.run(imp, "Re-order Hyperstack ...", "channels=[Channels (c)] slices=[Frames (t)] frames=[Slices (z)]")
 
 	IJ.saveAs("tiff", full_filepath)
+	imp.close()
 	
 	# make new directory to store all files
 	new_dir_path = root_dir + '/' + os.path.splitext(filename)[0]
