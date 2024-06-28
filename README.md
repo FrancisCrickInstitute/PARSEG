@@ -1,11 +1,9 @@
 # PARSEG
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/FrancisCrickInstitute/CALM_Template/HEAD?labpath=blob%2Fmain%2Fsegment_image.ipynb)
 [![PyPI](https://img.shields.io/pypi/v/napari-segmentation-overlap-filter.svg?color=green)](https://pypi.org/project/napari-segmentation-overlap-filter)
 [![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-segmentation-overlap-filter)](https://napari-hub.org/plugins/napari-segmentation-overlap-filter)
 
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3115/)
-![Commit activity](https://img.shields.io/github/commit-activity/y/FrancisCrickInstitute/CALM_Template?style=plastic)
 ![GitHub](https://img.shields.io/github/license/FrancisCrickInstitute/CALM_Template?color=green&style=plastic)
 
 PARSEG (PAralellised Refinement of SEGmentations) combines segmentation masks and filters overlapping objects based on colocalization statistics, such as percent overlap. 
@@ -33,6 +31,7 @@ To install the latest development version:
     pip install git+https://github.com/FrancisCrickInstitute/PARSEG
 
 ## Getting Started
+For more detailed walkthroughs, please consult [the wiki](https://github.com/FrancisCrickInstitute/PARSEG/wiki).
 
 ### Napari Plugin
 1. Download the example dataset images
