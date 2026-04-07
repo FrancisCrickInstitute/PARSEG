@@ -173,5 +173,17 @@ def remove_objects(image, objects, dask_bool):
         Img_removed = np.where(mask, 0, image)
     return Img_removed
 
+# TODO
+## Add function that filters the objects that AREN'T touching (so, for object colocalization)
+## Add function that removes objects that aren't touching
 
+def pct_coloc_filter(df, pct):
+    """
+    removes objects THAT DON'T overlap less than the threshold percent from the overlapping objects dataframe
+    :param Img_A:
+    :param Img_B:
+    :return: image with labels for segmentations from both images
+    """
+    df_filtered = df[df['Image_A_Overlap_PCT'] <= pct]
+    return df_filtered
 
